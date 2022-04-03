@@ -12,7 +12,7 @@ const Videos = () => {
           </video>
         </Videodiv>
         <VideoInfo>
-          <ImgIcon><img/></ImgIcon>
+          <ImgIcon><img src="/img/veek.jpg"/></ImgIcon>
           <Text>
             <h3>Pixar Shows</h3>
             <span>Christian House</span><br/>
@@ -50,7 +50,7 @@ const Videos = () => {
           </video>
         </Videodiv>
         <VideoInfo>
-          <ImgIcon><img/></ImgIcon>
+          <ImgIcon><img src="/img/manavatar.jpg"/></ImgIcon>
           <Text>
             <h3>Three ways God shows you who to Marry</h3>
             <span>Christian House</span><br/>
@@ -137,6 +137,11 @@ width: 60px;
 height: 60px;
 border-radius: 100%;
 background-color: green;
+img{
+  height:100%;
+  width: 100%;
+  border-radius:100%;
+}
 `
 const Videodiv = styled.div`
 width: 500px;
@@ -163,7 +168,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 border-radius: 3px;
-
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 :hover{
   transition: all 400ms;
     transform: scale(1.1);
